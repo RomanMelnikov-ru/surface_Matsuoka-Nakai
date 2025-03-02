@@ -27,7 +27,7 @@ fig = go.Figure()
 # Группа для линий в девиаторных плоскостях
 for plane in planes:
     # Создание сетки для sigma_1, sigma_2, sigma_3
-    sigma_range = np.linspace(-250, 250, 200)  # Диапазон напряжений
+    sigma_range = np.linspace(-250, 250, 250)  # Диапазон напряжений
     sigma_1, sigma_2 = np.meshgrid(sigma_range, sigma_range)
     sigma_3 = plane - sigma_1 - sigma_2  # Уравнение девиаторной плоскости
 
